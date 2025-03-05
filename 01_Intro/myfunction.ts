@@ -21,3 +21,23 @@ function getDeatails(name:string,age:number,isActive:boolean=false):string
     return `Name is ${name} and age is ${age} and isActive is ${isActive}`
 }
 getDeatails("admin",25);
+
+
+let heros=["Ironman","Thor","Hulk","Captain America"]
+
+let hero=heros.map((h:string):string=>{
+    return h.toUpperCase();
+})
+
+
+let consoleError=((errmsg):void=>{
+    
+    console.error(errmsg)
+}
+)
+
+
+function handleError(errmsg:string): never
+{
+  throw new Error(errmsg)
+}
