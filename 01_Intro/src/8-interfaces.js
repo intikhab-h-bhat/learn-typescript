@@ -1,4 +1,5 @@
-var emp1 = {
+"use strict";
+let emp1 = {
     name: "Intikhab",
     age: 42,
     address: "Srinagar",
@@ -6,24 +7,25 @@ var emp1 = {
     empid: 123,
     department: "IT",
     salary: 50000,
-    startTrial: function () {
+    startTrial() {
         return "Trial Started";
     },
-    getCoupon: function (name, discount) {
+    getCoupon(name, discount) {
         return 10;
     }
 };
 console.log(emp1);
-var customer1 = {
+let customer1 = {
     name: "Intikhab",
     age: 42,
     address: "Srinagar",
     email: "i@hb.com",
-    startTrial: function () {
+    startTrial: () => {
         return "Trial Started";
     },
-    getCoupon: function (name, discount) {
+    getCoupon: (name, discount) => {
         return 10;
     }
 };
 console.log(customer1);
+//# sourceMappingURL=8-interfaces.js.map

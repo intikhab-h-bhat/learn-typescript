@@ -30,14 +30,18 @@ let hero=heros.map((h:string):string=>{
 })
 
 
-let consoleError=((errmsg):void=>{
+// let consoleError=((errmsg):void=>{
     
-    console.error(errmsg)
-}
-)
+//     console.error(errmsg)
+// }
+//)
 
 
 function handleError(errmsg:string): never
 {
   throw new Error(errmsg)
 }
+
+
+
+export{}
